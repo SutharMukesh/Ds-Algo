@@ -4,16 +4,19 @@ class Marray{
       this.data = {}
     }
   
+    // O(1) -- Access
     get(index){
       return this.data[index];
     }
   
+    // O(1)
     push(item){
       this.data[this.length] = item;
       this.length++;
       return this.length;
     }
   
+    // O(1)
     pop(){
       const item = this.data[this.length-1];
       console.log(item)
@@ -22,6 +25,7 @@ class Marray{
       return item; 
     }
   
+    // O(n) -- Deletion
     delete(index){
       const item = this.data[index]
       this.shiftItems(index)

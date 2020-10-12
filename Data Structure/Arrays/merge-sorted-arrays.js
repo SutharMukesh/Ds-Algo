@@ -2,6 +2,7 @@ function mergeSortedArrays(arrayOne, arrayTwo) {
     let mergedArray = [];
     let pointer = 0 
     loop1:
+    
     for (let i = 0; i < arrayOne.length;) {
         for (let j = pointer; j <= arrayTwo.length;) {
             if (!arrayTwo[j] || arrayOne[i] < arrayTwo[j]) {
